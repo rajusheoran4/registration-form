@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Registration Form </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(46, 76, 228);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .registration-container {
+            background: #fff;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .registration-container h2 {
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .registration-container h2::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 3px;
+            width: 20%;
+            border-radius: 2px;
+            background-color: #e65b00;
+
+
+        }
+
+        .three-details-item {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        hr {
+            width: 70%;
+            height: 1px;
+            background-color: #d2d2d2;
+            margin: 1rem 0;
+            border: none;
+            color: red;
+        }
+
+        .personal-details,
+        .identity-details {
+            margin: .2rem 0;
+        }
+
+        .personal-details label,
+        .identity-details label {
+            margin: .5rem 1rem;
+            font-size: .9rem;
+            font-weight: 600;
+        }
+
+        .three-details-item input {
+            outline: none;
+            font-size: .8rem;
+            border-radius: .2rem;
+            border: 1px solid rgb(113, 101, 101);
+            padding: .1rem;
+            background-color: transparent;
+        }
+
+        .submit-btn {
+            border: none;
+            background-color: #e65b00;
+            color: white;
+            padding: .3rem 1rem;
+            display: block;
+            width: 50%;
+            margin: .6rem auto;
+            border-radius: 2rem;
+            font-size: 1.1rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="registration-container">
+        <h2> Registration </h2>
+        <section class="details-section">
+            <form action="" class="registration-form">
+                <!-- Personal Details Section -->
+                <h4> Personal Details </h4>
+                <section class="personal-details">
+                    <div class="three-details-item">
+                        <label for="name">
+                            <p>Full Name</p>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </label>
+
+
+                        <label for="DOB">
+                            <p>Date of Birth</p>
+                            <input type="text" name="DOB" id="DOB" placeholder="Enter your DOB">
+                        </label>
+                        <label for="email">
+                            <p>Email</p>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </label>
+                    </div>
+                    <div class="three-details-item">
+                        <label for="ph">
+                            <p> Mobile Number</p>
+                            <input type="tel" name="phone" id="ph" placeholder="Enter your mobile number">
+                        </label>
+
+                        <label for="gender">
+                            <p> Gender</p>
+                            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+                        </label>
+
+                        <label for="address">
+                            <p> Address </p>
+                            <input type="text" name="address" id="address" placeholder="Enter your Address">
+                        </label>
+                    </div>
+                </section>
+                <hr>
+                <!-- Identity Details Section -->
+                <h4> Other Details </h4>
+                <section class="identity-details">
+                    <div class="three-details-item">
+                        <label for="idType">
+                            <p> ID Type </p>
+                            <input type="text" name="idType" id="idType" placeholder="Enter your id type">
+                        </label>
+
+                        <label for="ID Number">
+                            <p> ID Number </p>
+                            <input type="text" name="idNumber" id="idNumber" placeholder="Enter your id number">
+                        </label>
+
+                        <label for="authority">
+                            <p> Issue Authority</p>
+                            <input type="text" name="authority" id="authority" placeholder="Enter id issue authority">
+                        </label>
+                    </div>
+                    <div class="three-details-item">
+
+                        <label for="issueDate">
+                            <p> Issue Date </p>
+                            <input type="text" name="issueDate" id="issueDate" placeholder="Enter id issue date">
+                        </label>
+
+                        <label for="issueState">
+                            <p> Issue State </p>
+                            <input type="text" name="issueState" id="issueState" placeholder="Enter id issue state">
+                        </label>
+
+                        <label for="expiryDate">
+                            <p> Occupation </p>
+                            <input type="text" name="expiryDate" id="expiryDate" placeholder="Enter id expiry date">
+                        </label>
+                    </div>
+                </section>
+                <button class="submit-btn"> Submit </button>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
